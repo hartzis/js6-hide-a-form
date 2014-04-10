@@ -4,14 +4,15 @@ $(document).on('ready', function() {
     $('#user-input-form').hide();
     //toggle show/hide form
     $('#collapse-form').on('click', function() {
-        $('#user-input-form').slideToggle("slow");
         copyInfoToForm();
+        $('#user-input-form').slideToggle("slow");
     })
 
-    $('#user-input-form input[type="submit"]').on('click', function() {
-        copyFormToInfo();
-        return false;
-    })
+    // SUBMIT BUTTON
+    // $('#user-input-form input[type="submit"]').on('click', function() {
+    //     copyFormToInfo();
+    //     return false;
+    // })
 
     var copyInfoToForm = function() {
         $('#form-name').val($('#user-name').text());
@@ -20,12 +21,17 @@ $(document).on('ready', function() {
         $('#form-javascript').val($('#user-javascript').text());
     }
 
-    var copyFormToInfo = function() {
-        $('#user-name').text($('#form-name').val());
-        $('#user-bio').text($('#form-bio').val());
-        $('#user-books').text($('#form-books').val());
-        $('#user-javascript').text($('#form-javascript').val());
-    }
+    // var copyFormToInfo = function() {
+    //     $('#user-name').text($('#form-name').val());
+    //     $('#user-bio').text($('#form-bio').val());
+    //     $('#user-books').text($('#form-books').val());
+    //     $('#user-javascript').text($('#form-javascript').val());
+    // }
+
+    // LISTENER FOR ALL INPUT
+    $('.form-input').keyup(function() {
+        $('#user-' + $(this).attr('id').split('-')[1]).text($(this).val());
+    })
 
 
 });
