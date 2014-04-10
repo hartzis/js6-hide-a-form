@@ -46,8 +46,10 @@ frm-lbl-width = 7rem
 frm-inp-width = 18rem
 
 .user-form
-	border 2px dashed #ddd
 	margin 5px
+	border-right: 2px dashed #ddd;
+	border-left: 2px dashed #ddd;
+	border-bottom: 2px dashed #ddd;
 
 .input-container
 	width: 100%
@@ -63,19 +65,23 @@ frm-inp-width = 18rem
 .form-in-txt
 	border-radius: 5px
 	border: 1px solid rgb(204,204,204)
+	&.txt-area
+		height 5rem
 
 .form-label
 	display: inline-block
 	width: frm-lbl-width
 	padding-right frm-lbl-pad-right
 	text-align right
+	width 15rem
 
 .form-input-submit
 	width: (frm-inp-width / 2)
 	margin-bottom: frm-mrg
 
 .collapse-button
-	width 100%
+	width 90%
+	margin 5px
 
 .button
 	background-color: rgb(200,200,200);
@@ -87,7 +93,25 @@ frm-inp-width = 18rem
 
 /* profile info area start */
 
+.user-info-container
+	text-align left
+
 .profile-info
 	border-top: 2px solid #ddd
 	margin-top: 5px
+
+.info-label
+	text-align right
+	width 40%
+	border-right 1px solid #ddd
+	border-bottom 1px solid #ddd
+	padding 2px
+
+.user-info
+	display inline-block
+
+.user-container
+	border 1px solid #ddd
+	margin 5px
+	
 

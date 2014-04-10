@@ -19,20 +19,20 @@
 			<form id="user-input-form" class="user-form">
 				
 				<div class="input-container">
-                <label class="form-label">First Name</label>
-                <input type="text" name="firstName" class="form-input form-in-txt">
+                <label class="form-label">Name</label>
+                <input type="text" name="name" class="form-input form-in-txt" id="form-name">
               </div>
               <div class="input-container">
-                <label class="form-label">Last Name</label>
-                <input type="text" name="lastName" class="form-input form-in-txt">
+                <label class="form-label">Bio</label>
+                <textarea name="bio" class="form-input form-in-txt txt-area" id="form-bio"></textarea>
               </div>
               <div class="input-container">
-                <label class="form-label">Email</label>
-                <input type="email" name="email" class="form-input form-in-txt">
+                <label class="form-label">Favorite Books</label>
+                <input type="text" name="books" class="form-input form-in-txt" id="form-books">
               </div>
               <div class="input-container">
-                <label class="form-label">Email</label>
-                <input type="email" name="email" class="form-input form-in-txt">
+                <label class="form-label">Favorite Javascript libraries</label>
+                <input type="text" name="javascript" class="form-input form-in-txt" id="form-javascript">
               </div>
               <div class="input-container">
                 <input type="submit" name="submit" class="form-input-submit button">
@@ -47,8 +47,27 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-1-2 centered profile-info"><h2>Profile Pic</h2><img src="http://placehold.it/300x300&amp;text=placehold.it+rocks!" alt=""></div>
-		<div class="col-1-2 profile-info">Profile Info</div>
+		<div class="col-1-2 centered profile-info"><h2>Profile Pic</h2><img src="http://placehold.it/300x300&amp;text=User-Profile-Image!" alt=""></div>
+		<div class="col-1-2 profile-info"><h2>Profile Info</h2>
+			<div class="user-container">
+				<div class="input-container user-info-container">
+	                <p class="user-info info-label">Name</p>
+	                <p id="user-name" class="user-info">Brian</p>
+	          	</div>
+	          	<div class="input-container user-info-container">
+	                <p class="user-info info-label">Bio</p>
+	                <p id="user-bio" class="user-info">I live in Colorado</p>
+	          	</div>
+	      		<div class="input-container user-info-container">
+	                <p class="user-info info-label">Favorite Books</p>
+	                <p id="user-books" class="user-info">Decisive</p>
+	          	</div>
+	          	<div class="input-container user-info-container">
+	                <p class="user-info info-label">Favorite Javascript libraries</p>
+	                <p id="user-javascript" class="user-info">jQuery</p>
+	          	</div>
+			</div>
+		</div>
 	</div>
 </div>
 
