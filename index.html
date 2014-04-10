@@ -2,14 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Untitled</title>
-  <link rel="stylesheet" type="text/css" href="http//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>js6-hide-a-form</title>
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+
+<div class="body-container centered">
+	<div class="row">
+
+		<div class="col-1-1"><h1>Your Profile</h1></div>
+
+	</div>
+	<div class="row">
+		<div class="col-1-1">
+			<form id="user-input-form" class="user-form">
+				
+				<div class="input-container">
+                <label class="form-label">First Name</label>
+                <input type="text" name="firstName" class="form-input form-in-txt">
+              </div>
+              <div class="input-container">
+                <label class="form-label">Last Name</label>
+                <input type="text" name="lastName" class="form-input form-in-txt">
+              </div>
+              <div class="input-container">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-input form-in-txt">
+              </div>
+              <div class="input-container">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-input form-in-txt">
+              </div>
+              <div class="input-container">
+                <input type="submit" name="submit" class="form-input-submit button">
+              </div>
+
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-1-1">
+			<input type="button" class="collapse-button button" id="collapse-form" value="Edit Profile" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-1-2 centered profile-info"><h2>Profile Pic</h2><img src="http://placehold.it/300x300&amp;text=placehold.it+rocks!" alt=""></div>
+		<div class="col-1-2 profile-info">Profile Info</div>
+	</div>
+</div>
+
+
 	
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,93 @@
+*, *:before *:after {
+box-sizing: border-box;
+}
+
+for i in 1..4
+	.col-1-{i}
+		width ((1/i)*100)%
+		float: left
+
+/*CLEARFIX HACK*/
+/*PREVENT ROWS FROM FLOWING INTO EACH OTHER*/
+.row:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
+.row-body:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.body-container
+	max-width: 800px
+	margin auto
+	background-color #aaa
+
+.centered
+	text-align: center
+
+.vert-center
+	vertical-align: center
+
+div
+	h1
+		border-bottom: 2px solid #ddd
+		margin 0
+		padding 0
+
+/*form start and variables*/
+frm-pad = .55rem
+frm-mrg = 1.35rem
+
+frm-lbl-pad-right = 1.5rem
+frm-lbl-width = 7rem
+frm-inp-width = 18rem
+
+.user-form
+	border 2px dashed #ddd
+	margin 5px
+
+.input-container
+	width: 100%
+	&:first-child
+		.form-input
+			margin-top: frm-mrg
+
+.form-input
+	margin: .3rem 0 frm-mrg 0;
+	padding frm-pad 0
+	width: frm-inp-width
+
+.form-in-txt
+	border-radius: 5px
+	border: 1px solid rgb(204,204,204)
+
+.form-label
+	display: inline-block
+	width: frm-lbl-width
+	padding-right frm-lbl-pad-right
+	text-align right
+
+.form-input-submit
+	width: (frm-inp-width / 2)
+	margin-bottom: frm-mrg
+
+.collapse-button
+	width 100%
+
+.button
+	background-color: rgb(200,200,200);
+	border: 0;
+	padding: 10px;
+	border-radius: 5px;
+
+
+
+/* profile info area start */
+
+.profile-info
+	border-top: 2px solid #ddd
+	margin-top: 5px
+
