@@ -6,6 +6,12 @@ $(document).on('ready', function() {
     $('#collapse-form').on('click', function() {
         copyInfoToForm();
         $('#user-input-form').slideToggle("slow");
+        if ($(this).val() === 'Edit Profile') {
+            $(this).val('Hide Form')
+        } else {
+            $(this).val('Edit Profile')
+        }
+
     })
 
     var copyInfoToForm = function() {
